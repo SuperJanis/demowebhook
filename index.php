@@ -8,7 +8,7 @@ $data = json_decode($rawBody);
 
 
 
-echo $data;
+echo $rawBody;
 // echo json_encode($data);
 
 ?>
