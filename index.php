@@ -9,7 +9,7 @@ $data = json_decode($rawBody);
 
 //$response['fulfillmentText'] = $request;
 
-echo json_encode($data);
+var_dump($data);
 
 
 //echo json_encode($response);
