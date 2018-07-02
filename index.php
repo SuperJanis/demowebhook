@@ -6,7 +6,7 @@ $data = json_decode($rawBody);
 
 $request = $data['queryResult']['queryText'];
 
-$response['fulfillmentText'] = '<speak><prosody rate="x-fast"><say-as interpret-as="characters"> $request </say-as></prosody></speak>';
+$response['fulfillmentText'] = '$request';
 
 echo json_encode($response);
 ?>
