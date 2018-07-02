@@ -6,7 +6,7 @@ $data = json_decode($rawBody);
 $request = '';
 
 //$request = $data['responseId']
-$request = $data["queryResult"]["queryText"];
+$request = $data['queryResult']['queryText'];
 
 //$response['fulfillmentText'] = $request;
 
