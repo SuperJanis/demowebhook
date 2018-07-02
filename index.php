@@ -11,6 +11,6 @@ $data = json_decode($rawBody);
 
 echo $rawBody;
 echo "MERCI POUR TOUT";
-echo $data;
+echo $data['queryResult']['queryText'];
 //echo json_encode($response);
 ?>
