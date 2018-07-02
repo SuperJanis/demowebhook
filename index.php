@@ -8,7 +8,7 @@ $request = $data['queryResult']['queryText'];
 
 //$response['fulfillmentText'] = $request;
 
-echo $request;
+echo json_encode($request);
 //echo $response;
 //echo json_encode($response);
 ?>
