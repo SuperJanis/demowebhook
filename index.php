@@ -3,6 +3,7 @@
 $rawBody  = file_get_contents('php://input');
 # Get as an object
 $data = json_decode($rawBody);
+$request = '';
 
 //$request = $data['responseId']
 $request = $data["queryResult"]["queryText"];
