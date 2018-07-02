@@ -4,6 +4,8 @@ $rawBody  = file_get_contents('php://input');
 # Get as an object
 $data = json_decode($rawBody);
 
-echo json_encode($data['queryText']);
+$data['queryResult']['parameters']['fulfillmentMessages']['text']['text'] = "Cinq sur cinq";
+
+echo json_encode($data);
 
 ?>
