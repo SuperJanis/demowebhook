@@ -6,7 +6,7 @@ $data = json_decode($rawBody);
 
 $request = $data['queryResult']['queryText'];
 
-$response['fulfillmentText'] = '$request';
+$response['fulfillmentText'] = $request;
 
 echo json_encode($response);
 ?>
