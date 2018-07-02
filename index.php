@@ -9,8 +9,8 @@ $data = json_decode($rawBody);
 
 //$response['fulfillmentText'] = $request;
 
-echo $rawBody;
-echo "MERCI POUR TOUT";
-echo $data['queryResult']['queryText'];
+echo json_encode($data);
+
+
 //echo json_encode($response);
 ?>
