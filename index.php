@@ -10,8 +10,12 @@ $request = '';
 
 //$response['fulfillmentText'] = $request;
 
-var_dump($data['queryResult']['queryText']);
-var_dump($data);
+foreach ($rawBody->queryResult as $item) {
+   var_dump($item->queryText);
+}
+
+//var_dump($data['queryResult']['queryText']);
+//var_dump($data);
 
 
 //echo json_encode($response);
