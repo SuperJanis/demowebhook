@@ -10,5 +10,7 @@ $data = json_decode($rawBody);
 //$response['fulfillmentText'] = $request;
 
 echo $rawBody;
+echo "MERCI POUR TOUT";
+echo $data;
 //echo json_encode($response);
 ?>
