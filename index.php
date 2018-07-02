@@ -4,10 +4,11 @@ $rawBody  = file_get_contents('php://input');
 # Get as an object
 $data = json_decode($rawBody);
 
-$request = $data['responseId']
-//$request = $data['queryResult']['queryText'];
+//$request = $data['responseId']
+///$request = $data['queryResult']['queryText'];
 
-$response['fulfillmentText'] = $request;
+//$response['fulfillmentText'] = $request;
 
-echo json_encode($response);
+echo $rawBody;
+//echo json_encode($response);
 ?>
