@@ -5,14 +5,13 @@ $rawBody  = file_get_contents('php://input');
 $data = json_decode($rawBody);
 $request = '';
 
-//$request = $data['responseId']
-//$request = $data['queryResult']['queryText'];
 
 //$response['fulfillmentText'] = $request;
+echo $data->queryResult->queryText;
 
-foreach ($rawBody->queryResult as $query) {
-   var_dump($query->queryText);
-}
+$request = $data->queryResult->queryText;
+
+echo $request;
 
 //var_dump($data['queryResult']['queryText']);
 //var_dump($data);
